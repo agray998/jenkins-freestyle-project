@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Hello from Jenkins"
+echo "Hello from Jenkins" | tee jenkins.txt
+
