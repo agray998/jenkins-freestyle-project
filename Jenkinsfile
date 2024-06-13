@@ -15,8 +15,7 @@ pipeline {
         stage ('Generate artifacts') {
             steps {
                 sh '''
-                #!/bin/bash
-                for i in {1..5}; do echo "This is file \$i" > file\$i.txt; done
+                bash stage-2.sh
                 '''
             }
         }
